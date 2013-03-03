@@ -51,3 +51,8 @@ npm install coffeeify
 # license
 
 MIT
+
+# maintainers wanted
+
+I am not a coffee-script user so if you use this plugin regularly and want to
+take it over I will gladly add you as a maintainer on npm.
