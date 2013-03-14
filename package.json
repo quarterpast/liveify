@@ -4,7 +4,7 @@
     "description": "browserify v2 plugin for coffee-script with support for mixed .js and .coffee files",
     "main": "index.js",
     "dependencies": {
-        "coffee-script": "~1.5.0",
+        "coffee-script": "~1.6.0",
         "through": "~2.2.0"
     },
     "devDependencies": {
