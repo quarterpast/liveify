@@ -23,7 +23,7 @@ test('transform adds sourcemap comment', function (t) {
             { version: 3,
               file: 'foo.js',
               sourceRoot: '',
-              sources: [ 'foo.coffee' ],
+              sources: [ file ],
               names: [],
               mappings: ';AAAA;CAAA;CAAA,CAAA,CAAA,IAAO,GAAK;CAAZ',
               sourcesContent: [ 'console.log(require \'./bar.js\')\n' ] },
