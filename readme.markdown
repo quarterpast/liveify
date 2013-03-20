@@ -52,16 +52,6 @@ With [npm](https://npmjs.org) do:
 npm install coffeeify
 ```
 
-# advanced
-
-the root relative to which the coffee script files are resolved can be set via:
-
-```js
-coffeeify.root = '/path/to/coffeefiles/root'
-```
-
-naturally this requires the build script to be authored in JavaScript or CoffeScript.
-
 # license
 
 MIT
