@@ -16,10 +16,9 @@ function resolvePath(file) {
 }
 
 function compile(file, data) {
-    var compiled = coffee.compile(data, { sourceMap: true, filename: file });
+    var compiled = coffee.compile(data, { sourceMap: true, generatedFile: file, inline: true });
     var comment = convert
         .fromJSON(compiled.v3SourceMap)
-        .setProperty('sourcesContent', [ data ])
         .setProperty('sources', [ resolvePath(file) ])
         .toComment();
 

@@ -23,11 +23,11 @@ test('transform allows overriding root directory, given file is directly in root
         t.deepEqual(
             sourceMap,
             { version: 3,
-              file: 'foo.js',
+              file: file,
               sourceRoot: '',
               sources: [ 'foo.coffee' ],
               names: [],
-              mappings: ';AAAA;CAAA;CAAA,CAAA,CAAA,IAAO,GAAK;CAAZ',
+              mappings: ';AAAA;CAAA,CAAA,CAAA,IAAO,GAAK;CAAZ',
               sourcesContent: [ 'console.log(require \'./bar.js\')\n' ] },
             'adds sourcemap comment with sources pointing to files relative to given root when file is directly in root'
       );
@@ -52,11 +52,11 @@ test('transform allows overriding root directory, given file is one dir below ro
         t.deepEqual(
             sourceMap,
             { version: 3,
-              file: 'foo.js',
+              file: file,
               sourceRoot: '',
               sources: [ '/example/foo.coffee' ],
               names: [],
-              mappings: ';AAAA;CAAA;CAAA,CAAA,CAAA,IAAO,GAAK;CAAZ',
+              mappings: ';AAAA;CAAA,CAAA,CAAA,IAAO,GAAK;CAAZ',
               sourcesContent: [ 'console.log(require \'./bar.js\')\n' ] },
             'adds sourcemap comment with sources pointing to files relative to root'
       );
