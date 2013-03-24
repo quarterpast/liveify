@@ -1,1 +1,1 @@
-module.exports = require('./baz.coffee')(5)
+module.exports = require('./baz.ls')(5)
