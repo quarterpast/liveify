@@ -1,10 +1,10 @@
 {
-    "name": "coffeeify",
+    "name": "liveify",
     "version": "0.3.0",
-    "description": "browserify v2 plugin for coffee-script with support for mixed .js and .coffee files",
+    "description": "browserify v2 plugin for coffee-script with support for mixed .js and .ls files",
     "main": "index.js",
     "dependencies": {
-        "coffee-script": "~1.6.2",
+        "LiveScript": "~1.1.1",
         "through": "~2.2.0",
         "convert-source-map": "~0.2.1"
     },
@@ -33,5 +33,6 @@
         "email": "mail@substack.net",
         "url": "http://substack.net"
     },
+    "contributors": ["Matt Brennan <matt.brennan@import.io>"],
     "license": "MIT"
 }
