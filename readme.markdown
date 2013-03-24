@@ -1,21 +1,19 @@
-# coffeeify
+# liveify
 
-browserify v2 plugin for coffee-script
+browserify v2 plugin for livescript
 
-mix and match `.coffee` and `.js` files in the same project
+mix and match `.ls` and `.js` files in the same project
 
-**important: when using require('path/to/file.coffee') remember to use .coffee extension**
-
-[![build status](https://secure.travis-ci.org/substack/coffeeify.png)](http://travis-ci.org/substack/coffeeify)
+**important: when using require('path/to/file.ls') remember to use .ls extension**
 
 # example
 
-given some files written in a mix of `js` and `coffee`:
+given some files written in a mix of `js` and `ls`:
 
-foo.coffee:
+foo.ls:
 
-``` coffee
-console.log(require './bar.js')
+``` livescript
+console.log require './bar.js'
 ```
 
 bar.js:
@@ -24,22 +22,22 @@ bar.js:
 module.exports = require('./baz.coffee')(5)
 ```
 
-baz.coffee:
+baz.ls:
 
-``` js
-module.exports = (n) -> n * 111
+``` livescript
+module.exports = (* 111)
 ```
 
 install coffeeify into your app:
 
 ```
-$ npm install coffeeify
+$ npm install liveify
 ```
 
-when you compile your app, just pass `-t coffeeify` to browserify:
+when you compile your app, just pass `-t liveify` to browserify:
 
 ```
-$ browserify -t coffeeify foo.coffee > bundle.js
+$ browserify -t liveify foo.coffee > bundle.js
 $ node bundle.js
 555
 ```
@@ -49,14 +47,10 @@ $ node bundle.js
 With [npm](https://npmjs.org) do:
 
 ```
-npm install coffeeify
+npm install liveify
 ```
 
 # license
 
 MIT
 
-# maintainers wanted
-
-I am not a coffee-script user so if you use this plugin regularly and want to
-take it over I will gladly add you as a maintainer on npm.
