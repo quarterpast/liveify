@@ -6,7 +6,7 @@ test('bundle transform', function (t) {
     t.plan(1);
     
     var b = browserify();
-    b.add(__dirname + '/../example/foo.coffee');
+    b.add(__dirname + '/../example/foo.ls');
     b.transform(__dirname + '/..');
     b.bundle(function (err, src) {
         if (err) t.fail(err);
