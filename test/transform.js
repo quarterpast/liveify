@@ -9,11 +9,11 @@ test('transform adds sourcemap comment', function (t) {
     t.plan(1);
     var data = '';
 
-    var file = path.join(__dirname, '../example/foo.coffee')
+    var file = path.join(__dirname, '../example/foo.ls')
     fs.createReadStream(file)
         .pipe(transform(file))
         .pipe(through(write, end));
-    
+
     function write (buf) { data += buf }
     function end () {
         var sourceMap = convert.fromSource(data).toObject();
