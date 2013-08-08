@@ -19,7 +19,7 @@ console.log require './bar.js'
 bar.js:
 
 ``` js
-module.exports = require('./baz.coffee')(5)
+module.exports = require('./baz.ls')(5)
 ```
 
 baz.ls:
@@ -28,7 +28,7 @@ baz.ls:
 module.exports = (* 111)
 ```
 
-install coffeeify into your app:
+install liveify into your app:
 
 ```
 $ npm install liveify
@@ -37,7 +37,7 @@ $ npm install liveify
 when you compile your app, just pass `-t liveify` to browserify:
 
 ```
-$ browserify -t liveify foo.coffee > bundle.js
+$ browserify -t liveify foo.ls > bundle.js
 $ node bundle.js
 555
 ```

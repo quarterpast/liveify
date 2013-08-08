@@ -1,7 +1,7 @@
 {
     "name": "liveify",
     "version": "0.3.0",
-    "description": "browserify v2 plugin for coffee-script with support for mixed .js and .ls files",
+    "description": "browserify v2 plugin for LiveScript with support for mixed .js and .ls files",
     "main": "index.js",
     "dependencies": {
         "LiveScript": "~1.1.1",
@@ -16,11 +16,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "git://github.com/substack/coffeeify.git"
+        "url": "git://github.com/quarterto/liveify.git"
     },
-    "homepage": "https://github.com/substack/coffeeify",
+    "homepage": "https://github.com/quarterto/liveify",
     "keywords": [
-        "coffee-script",
+        "LiveScript",
+        "ls",
         "browserify",
         "v2",
         "js",
