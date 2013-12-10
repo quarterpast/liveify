@@ -50,6 +50,16 @@ With [npm](https://npmjs.org) do:
 npm install liveify
 ```
 
+# options
+
+By default livescript is compiled with the constant flag set to
+false. This can be set to true by setting the environment
+variable `LSC_CONST`:
+
+```
+LSC_CONST=true browserify -t liveify -e my-app.ls > my-app.js
+```
+
 # license
 
 MIT
