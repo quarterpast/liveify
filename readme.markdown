@@ -1,4 +1,4 @@
-# liveify
+# liveify [![Build Status](https://travis-ci.org/quarterto/liveify.svg?branch=master)](https://travis-ci.org/quarterto/liveify)
 
 browserify transform for livescript
 
