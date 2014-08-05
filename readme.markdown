@@ -1,6 +1,6 @@
 # liveify
 
-browserify v2 plugin for livescript
+browserify transform for livescript
 
 mix and match `.ls` and `.js` files in the same project
 
