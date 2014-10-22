@@ -1,10 +1,10 @@
 {
   "name": "liveify",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "browserify v2 plugin for LiveScript with support for mixed .js and .ls files",
   "main": "index.js",
   "dependencies": {
-    "LiveScript": "~1.2",
+    "LiveScript": "~1.3.1",
     "through": "~2.2.0"
   },
   "devDependencies": {
