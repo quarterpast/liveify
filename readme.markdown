@@ -60,6 +60,17 @@ variable `LSC_CONST`:
 LSC_CONST=true browserify -t liveify -e my-app.ls > my-app.js
 ```
 
+# livescript versions
+
+Livescript does not follow semver. For example, 1.3 is backwards-incompatible with code written in 1.2 using `require!`. This causes problems with `npm`; because Liveify uses a semver range to specify Livescript, you can get an incompatible version when you don't expect it. To use a specific version of Livescript with Liveify, explicity install it alongside, then dedupe:
+
+```
+npm install liveify@2 LiveScript@1.2.0
+npm dedupe
+```
+
+This only works with Liveify version 2 and later. Liveify 1.x will only dedupe Livescript versions 1.3.1 and later.
+
 # license
 
 MIT
