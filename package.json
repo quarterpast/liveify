@@ -4,7 +4,7 @@
   "description": "browserify v2 plugin for LiveScript with support for mixed .js and .ls files",
   "main": "index.js",
   "dependencies": {
-    "LiveScript": "1.x",
+    "livescript": "1.x",
     "through": "~2.2.0"
   },
   "devDependencies": {

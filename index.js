@@ -1,4 +1,4 @@
-var LiveScript = require('LiveScript');
+var LiveScript = require('livescript');
 var through = require('through');
 
 // Compile all variables as constants if the LSC_CONST
