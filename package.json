@@ -1,0 +1,40 @@
+{
+  "name": "liveify",
+  "version": "2.0.0",
+  "description": "browserify v2 plugin for LiveScript with support for mixed .js and .ls files",
+  "main": "index.js",
+  "dependencies": {
+    "LiveScript": "1.x",
+    "through": "~2.2.0"
+  },
+  "devDependencies": {
+    "tap": "~0.4.0",
+    "browserify": "~2.4.0"
+  },
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/quarterto/liveify.git"
+  },
+  "homepage": "https://github.com/quarterto/liveify",
+  "keywords": [
+    "LiveScript",
+    "ls",
+    "browserify",
+    "v2",
+    "js",
+    "plugin",
+    "transform"
+  ],
+  "author": {
+    "name": "James Halliday",
+    "email": "mail@substack.net",
+    "url": "http://substack.net"
+  },
+  "contributors": [
+    "Matt Brennan <matt.brennan@import.io>"
+  ],
+  "license": "MIT"
+}
